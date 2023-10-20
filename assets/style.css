@@ -119,8 +119,7 @@
 
 .gallery-item {
     position: absolute;
-    width: 440px;
-    height: 440px;
+   
     object-fit: cover;
     padding: .5em
 }
