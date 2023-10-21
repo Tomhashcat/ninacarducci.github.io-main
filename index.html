@@ -4,14 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link itemprop="url"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-	
-	<meta name="description" content="Nina Carducci - Photographe professionnelle">
+	<meta name="geo.region" content="FR" async>
+	<meta name="telephone" content="05 56 67 78 89" async>
+	<meta name="geo.placename" content="Bordeaux, France" async>
+	<meta property="og:description" content="Nina Carducci - Photographe professionnelle" async>
+	<meta property="og:title" content="Nina Carducci" async>
+	<meta property="og:type" content="website" async>
+	<meta name="keywords" content="photographe, photographie, portrait, mariage" async>
 	<title itemprop="name">Nina Carducci</title>
 	<style>
 		body {
@@ -32,13 +36,12 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link"  itemprop="url" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img width="50%"src="assets/images/instagram.webp" alt="Instagram"></a></li>
+				<li><a class="social-link" itemprop="url" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+						target="_blank"><img width="50%" src="assets/images/instagram.webp" alt="Instagram"></a></li>
 			</ul>
 		</nav>
 	</header>
 	<div id="carousel">
-
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -78,43 +81,18 @@
 		<div>
 			<img class="picture left" src="./assets/images/nina.webp" alt="Nina Carducci">
 		</div>
-		<article {
-			"@context": "http://schema.org",
-			"@type": "NewsArticle",
-			"mainEntityOfPage":{
-				"@type":"WebPage",
-				"@id":"https://my-company.com/article"
-			},
-			"headline": "Article headline",
-			"image": {
-				"@type": "ImageObject",
-				"url": "https://my-company.com/thumbnail1.jpg",
-				"height": 800,
-				"width": 800
-			},
-			"datePublished": "YYYY-MM-DDThh:ii:ss+hh:ii",
-			"dateModified": "YYYY-MM-DDThh:ii:ss+hh:ii",
-			"author": {
-				"@type": "Person",
-				"name": "John Doe"
-			},
-			 "publisher": {
-				"@type": "Organization",
-				"name": "My Company",
-				"logo": {
-					"@type": "ImageObject",
-					"url": "https://my-company.com/logo.jpg",
-					"width": 600,
-					"height": 60
-				}
-			},
-		 "description": "A most wonderful article"
-		} id="about-me">
+		<article { "@context" : "http://schema.org" , "@type" : "NewsArticle" , "mainEntityOfPage" :{ "@type"
+			:"WebPage", "@id" :"https://my-company.com/article" }, "headline" : "Article headline" , "image" : { "@type"
+			: "ImageObject" , "url" : "https://my-company.com/thumbnail1.jpg" , "height" : 800, "width" : 800
+			}, "datePublished" : "YYYY-MM-DDThh:ii:ss+hh:ii" , "dateModified" : "YYYY-MM-DDThh:ii:ss+hh:ii" , "author" :
+			{ "@type" : "Person" , "name" : "John Doe" }, "publisher" : { "@type" : "Organization" , "name"
+			: "My Company" , "logo" : { "@type" : "ImageObject" , "url" : "https://my-company.com/logo.jpg" , "width" :
+			600, "height" : 60 } }, "description" : "A most wonderful article" } id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<p   class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 				prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
 				immortels, voilà ce qui me fait vibrer.</p>
-			<p  >Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
 				figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux,
 				ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
@@ -124,7 +102,7 @@
 	</section>
 	<section id="gallery">
 		<h2 class="title">Portfolio</h2>
-		<div class="container py-3">
+		<div itemscope class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" alt="concert" class="gallery-item"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2.webp" />
@@ -172,7 +150,6 @@
 					<h3>350€/demi journée</h3>
 					<span>Matériel, déplacement inclus</span>
 				</div>
-
 			</div>
 			<div class="service">
 				<div class="service__description">
@@ -192,7 +169,7 @@
 						album photo personnalisé</p>
 				</div>
 				<div class="service__price">
-					<h3 >400€ album A4</h3>
+					<h3>400€ album A4</h3>
 					<span>30 pages recto/verso</span>
 				</div>
 			</div>
@@ -229,10 +206,10 @@
 	</div>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" defer>
 	<link rel="stylesheet" href="./assets/style.min.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" 
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
-	<script src="./assets/maugallery.min.js" ></script>
-	<script src="./assets/scripts.min.js" ></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
 </body>
 
 </html>
