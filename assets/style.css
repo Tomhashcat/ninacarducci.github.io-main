@@ -1,3 +1,9 @@
+body {
+    max-width: 1920px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
 .top-header {
     background-color: #fff;
     position: sticky;
