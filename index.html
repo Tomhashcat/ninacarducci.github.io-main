@@ -49,7 +49,13 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.webp" alt="Instagram"
+              ><img 
+              srcset="
+              ./assets/images/instagram-20.webp  20w,
+              ./assets/images/instagram.webp 40w
+            "
+            sizes="(max-width: 760px) 320px, 1024px"
+              src="assets/images/instagram.webp" alt="Instagram"
             /></a>
           </li>
         </ul>
@@ -88,10 +94,10 @@
             <div class="carousel-item active">
               <img
                 srcset="
-                  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-320.webp   320w,
-                  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp 1024w
+                  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-320.webp   320w,                  
+                  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.webp 1440w
                 "
-                sizes="(max-width: 760px) 320px, 1024px"
+                sizes="(max-width: 760px) 320px, 1024px,  1440px"
                 class="d-block w-100"
                 alt="buziness suit"
               />
@@ -100,9 +106,9 @@
               <img
                 srcset="
                   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-320.webp   320w,
-                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp 1024w
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w
                 "
-                sizes="(max-width: 760px) 320px,1024px"
+                sizes="(max-width: 760px) 320px,1440px"
                 class="d-block w-100"
                 alt="party dance"
               />
@@ -111,9 +117,9 @@
               <img
                 srcset="
                   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-320.webp   320w,
-                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp 1024w
+                  ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w
                 "
-                sizes="(max-width:760px) 320px, 1024px"
+                sizes="(max-width:760px) 320px, 1440px"
                 class="d-block w-100"
                 alt="mariage love"
               />
@@ -142,8 +148,13 @@
       <section id="about">
         <div>
           <img
+          srcset="
+                ./assets/images/nina-204.webp 205w,
+                ./assets/images/nina-400.webp 400w
+              "
+              sizes="(max-width:760px) 205px, 400px"
             class="picture left"
-            src="./assets/images/nina.webp"
+            src="./assets/images/nina-400.webp"
             alt="Nina Carducci"
           />
         </div>
@@ -174,23 +185,23 @@
           <div class="gallery" style="display: none">
             <img
               srcset="
-                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2-220.webp 220w,
-                ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2-440.webp 440w
+                ./assets/images/gallery/concerts/aaron-paul-320.webp 320w,
+                ./assets/images/gallery/concerts/aaron-paul-440.webp 440w
               "
-              sizes="(max-width:760px) 220px, 440px"
+              sizes="(max-width:760px) 320px, 440px"
               data-gallery-tag="Concert"
               alt="concert"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2-440.webp "
+              src="./assets/images/gallery/concerts/aaron-paul-440.webp "
             />
             <img
               data-gallery-tag="Entreprises"
               alt="entreprise"
-              class=" lightboxImage gallery-item img-fluid"
+              class=" gallery-item img-fluid"
             
-              srcset="./assets/images/gallery/entreprise/ali-morshedlou-220.webp 220w,
+              srcset="./assets/images/gallery/entreprise/ali-morshedlou-320.webp 320w,
                     ./assets/images/gallery/entreprise/ali-morshedlou-440.webp 440w"
-              sizes="(max-width:760px) 220px, 440px"
+              sizes="(max-width:760px) 320px, 440px"
               src="./assets/images/gallery/entreprise/ali-morshedlou-440.webp"
             />
 
@@ -199,10 +210,10 @@
               alt="entreprise bureau"
               class="gallery-item img-fluid"
               srcset="
-                ./assets/images/gallery/entreprise/jason-goodman-220.webp 220w,
+                ./assets/images/gallery/entreprise/jason-goodman-320.webp 320w,
                 ./assets/images/gallery/entreprise/jason-goodman-440.webp 440w
               "
-              sizes="(max-width:760px) 220px, 440px"
+              sizes="(max-width:760px) 320px, 440px"
               src="./assets/images/gallery/entreprise/jason-goodman-440.webp"
             />
 
@@ -210,43 +221,69 @@
               data-gallery-tag="Mariages"
               alt="mariages"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/mariage/hannah-busing.webp"
+              srcset="
+              ./assets/images/gallery/mariage/hannah-busing-320.webp 320w,
+              ./assets/images/gallery/mariage/hannah-busing-440.webp 440w
+            "
+            sizes="(max-width:760px) 320px, 440px"
+              src="./assets/images/gallery/mariage/hannah-busing-440.webp"
             />
             <img
               data-gallery-tag="Portrait"
               alt="portrait"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/portraits/ade-tunji.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/portraits/ade-tunji-320.webp 320w,
+                ./assets/images/gallery/portraits/ade-tunji-440.webp 440w
+              "
+              sizes="(max-width:760px) 320px, 440px"
+              src="./assets/images/gallery/portraits/ade-tunji-440.webp"
             />
             <img
               data-gallery-tag="Mariages"
               alt="mariages  smile"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/mariage/jakob-owens.webp"
+              srcset="
+              ./assets/images/gallery/mariage/jakob-owens-320.webp 320w,
+              ./assets/images/gallery/mariage/jakob-owens-440.webp 440w
+            "
+            sizes="(max-width:760px) 320px, 440px"
+              src="./assets/images/gallery/mariage/jakob-owens-440.webp"
             />
             <img
               data-gallery-tag="Portrait"
               alt="portrait girl"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/portraits/van-prattenburg.webp"
+              srcset="
+              ./assets/images/gallery/portraits/van-prattenburg-320.webp 320w,
+              ./assets/images/gallery/portraits/van-prattenburg-440.webp 440w
+            "
+            sizes="(max-width:760px) 320px, 440px"
+              src="./assets/images/gallery/portraits/van-prattenburg-440.webp"
             />
             <img
               srcset="
-                ./assets/images/gallery/concerts/austin-neill-220.webp 220w,
-                ./assets/images/gallery/concerts/austin-neill.webp 440w
+                ./assets/images/gallery/concerts/austin-neill-320.webp 320w,
+                ./assets/images/gallery/concerts/austin-neill-440.webp 440w
               "
-              sizes="(max-width: 760px) 220px,
+              sizes="(max-width: 760px) 320px,
 							  440px"
               data-gallery-tag="Concert"
               alt="concert"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/concerts/austin-neill.webp"
+              src="./assets/images/gallery/concerts/austin-neill-440.webp"
             />
             <img
               data-gallery-tag="Entreprises"
               alt="entreprise"
               class="gallery-item img-fluid"
-              src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"
+              srcset="
+              ./assets/images/gallery/entreprise/mateus-campos-felipe-320.webp 320w,
+              ./assets/images/gallery/entreprise/mateus-campos-felipe-440.webp 440w
+            "
+            sizes="(max-width: 760px) 320px,
+              440px"
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe-440.webp"
             />
           </div>
         </div>
@@ -349,10 +386,10 @@
           <div class="picture right">
             <img
               srcset="
-                ./assets/images/camera/220.webp    220w,
-                ./assets/images/camera-418.webp 418w
+                ./assets/images/camera-185.webp   185w,
+                ./assets/images/camera-392.webp 392w
               "
-              sizes="(max-width: 760px) 220px, 418px"
+              sizes="(max-width: 760px) 185px, 392px"
               alt="appareil photo"
             />
           </div>
