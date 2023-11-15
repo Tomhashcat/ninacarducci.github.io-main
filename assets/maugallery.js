@@ -116,13 +116,13 @@
     openLightBox(element, lightboxId) {
       $(`#${lightboxId}`)
         .find(".lightboxImage")
-        .attr("src", element.attr("src"));
+        .attr("srcset", element.attr("srcset"));
       $(`#${lightboxId}`).modal("toggle");
     },
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
-        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
+        if ($(this).attr("srcset") === $(".lightboxImage").attr("srcset")) {
           activeImage = $(this);
         }
       });
